@@ -1,0 +1,33 @@
+.coin-app {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: #f8f9fd;
+   min-height: 100vh;
+   transition: all 0.3s;
+
+   .coins-cointainer {
+      padding: 0 10px;
+      margin-top: 120px;
+      overflow: auto;
+
+      @media (min-width: 0) {
+         height: 80vh;
+      }
+      @media (min-width: 900px) {
+         height: 75vh;
+      }
+   }
+
+   .coins-cointainer::-webkit-scrollbar {
+      display: none;
+   }
+}
+
+.darkmodeapp {
+   background: #2a2d37;
+}
+
+.lightmodeapp {
+   background: #fff;
+}

@@ -1,0 +1,104 @@
+.coin-container {
+   background: #f8f9fd;
+   padding: 20px 10px;
+   transition: all .3s;
+   margin-bottom: 15px;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+   @media (min-width: 0) {
+      margin-left: 0;
+      width: 98vw;
+      font-size: 13px;
+   }
+
+   @media (min-width: 900px) {
+      margin-left: 230px;
+      width: calc(90vw - 230px);
+      font-size: 16px;
+
+   }
+
+   .red {
+      color: red;
+   }
+
+   .green {
+      color: green;
+   }
+
+   .coin-row {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      text-align: center;
+
+      .coin {
+         width: 25%;
+         display: flex;
+         align-items: center;
+         font-weight: 300;
+
+         @media (min-width: 0) {
+            flex-direction: column;
+            font-size: 13px;
+            justify-content: center;
+         }
+
+         @media (min-width: 900px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            font-size: 16px;
+
+         }
+
+         > img {
+            width: 30px;
+           
+            @media (min-width: 900px) {
+               margin-right: 10px;
+            }
+         }
+      }
+
+      .coin-data {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         .coin-price {
+            font-weight: 300;
+            text-align: center;
+         }
+
+         .coin-marketcap {
+            text-align: center;
+            font-weight: 300;
+            color: #aeb4c2;
+            @media (min-width: 0) {
+               display: none;
+            }
+
+            @media (min-width: 900px) {
+               display: flex;
+            }
+         }
+
+         .coin-volume {
+            font-weight: 500;
+         }
+
+         .coin-percent {
+            font-weight: 300;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+         }
+      }
+   }
+}
+

@@ -1,0 +1,112 @@
+.sidebar2 {
+   position: fixed;
+   left: 0;
+   height: 100vh;
+   width: 230px;
+   border-right: 1px solid #a0abb9;
+   z-index: 1;
+   padding: 50px 0;
+   transition: all 0.3s;
+
+   @media (min-width: 0px) {
+      display: none;
+   }
+
+   @media (min-width: 900px) {
+      display: inline;
+   }
+
+   .sidebar-header {
+      display: flex;
+      justify-content: flex-start;
+      height: 50px;
+   }
+
+   .sidebar-menu,
+   .sidebar-support {
+      margin-bottom: 40px;
+
+      > p {
+         margin-left: 25px;
+         margin-bottom: 15px;
+         font-size: 13px;
+         font-weight: 500;
+         color: #a1adbe;
+      }
+
+      > nav ul li {
+         cursor: pointer;
+         padding: 8px 0;
+         font-weight: 300;
+         font-size: 15px;
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         width: 100%;
+         margin: 10px 0;
+         border-left: 3px solid transparent;
+         transition: all 0.1s ease-in-out;
+
+         &:hover {
+            background: #f8f9fd;
+         }
+
+         &:nth-child(1) {
+            border-left: 3px solid #1552ef;
+            color: #1552ef;
+
+            > span {
+               color: #1552ef;
+            }
+         }
+
+         > span {
+            margin-left: 20px;
+            margin-right: 10px;
+            color: #a0abb9;
+         }
+      }
+   }
+
+   .sidebar-support {
+      > nav ul li {
+         &:nth-child(1) {
+            border-left: 3px solid transparent;
+            color: #000;
+
+            > span {
+               color: #a0abb9;
+            }
+         }
+      }
+   }
+}
+
+.darkmode {
+   border-color: #2e3039;
+   background-color: #1f2128;
+   color: #a0abb9;
+
+   .sidebar-support {
+      > nav ul li {
+         &:nth-child(1) {
+            color: #a0abb9;
+         }
+         &:hover {
+            background: #2a2d37;
+         }
+      }
+   }
+
+   .sidebar-menu {
+      > nav ul li {
+         &:hover {
+            background: #2a2d37;
+         }
+      }
+   }
+}
+
+.lightmode {
+   background: #fff;
+}

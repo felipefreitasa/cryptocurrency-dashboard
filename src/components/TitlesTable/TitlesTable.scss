@@ -1,0 +1,45 @@
+.titles-table {
+   background: #fff;
+   position: fixed;
+   top: 81px;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+   color: #b7bdc6;
+   font-weight: 400;
+   font-size: 15px;
+   transition: all .3s;
+
+   @media (min-width:0){
+      margin-left: 0;
+      width: 100vw;
+   }
+
+   @media (min-width: 900px){
+      margin-left: 230px;
+      width: calc(90vw - 230px);
+   }
+
+   > p {
+      &:nth-child(1){
+         width: 25%;
+      }
+      &:nth-child(3){
+         @media (min-width:0){
+            display: none;
+         }
+      
+         @media (min-width: 900px){
+            display: flex;
+         }
+      }
+   }
+}
+
+
+.teste {
+   background: #2a2d37;
+   
+}

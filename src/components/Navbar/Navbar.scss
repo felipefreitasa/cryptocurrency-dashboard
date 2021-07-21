@@ -1,0 +1,102 @@
+.navbar {
+   background: #fff;
+   height: 60px;
+   position: fixed;
+   top: 0;
+   border-bottom: 1px solid #a0abb9;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   transition: all 0.3s;
+
+   @media (min-width: 0) {
+      z-index: 0;
+      margin-left: 0px;
+      width: 100%;
+      > form {
+         width: 100%;
+         display: flex;
+         justify-content: flex-end;
+      }
+   }
+
+   @media (min-width: 900px) {
+      margin-left: 230px;
+      width: calc(100% - 230px);
+   }
+
+   .navbar-icons {
+      display: flex;
+      color: #a0abb9;
+
+      > span {
+         background: #fff;
+         margin-right: 10px;
+         border-radius: 50%;
+         padding: 5px;
+         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      @media (min-width: 0) {
+         display: none;
+      }
+      @media (min-width: 900px) {
+         display: flex;
+      }
+   }
+
+   > form {
+      > div {
+         position: relative;
+         color: #a0abb9;
+
+         > input {
+            border: 0;
+            border-radius: 6px;
+            outline: none;
+            background: #fff;
+            height: 35px;
+            padding-left: 38px;
+            color: #a0abb9;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            &::placeholder {
+               color: #a0abb9;
+            }
+
+            @media (min-width: 0) {
+               display: none;
+            }
+            @media (min-width: 900px) {
+               display: flex;
+
+               width: 300px;
+            }
+         }
+
+         > span {
+            position: absolute;
+            left: 10px;
+            top: 4px;
+
+            @media (min-width: 0) {
+               display: none;
+            }
+            @media (min-width: 900px) {
+               display: flex;
+            }
+         }
+      }
+   }
+}
+
+.darkmode {
+   background-color: #1f2128;
+   border-color: #424652;
+}
+
+.lightmode {
+   background: #f8f9fd;
+   border-color: #d8d5d5;
+}
